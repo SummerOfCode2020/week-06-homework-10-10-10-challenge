@@ -20,21 +20,21 @@
 */
 
 /* 
- @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 20000. 
+ @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 19990
- @Example - Expect to see 19991, 19992, 19993, 19994, 19995, 19996, 19997, 19998, 19999, 20000 in the terminal
+ @Example - Expect to see 19991, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
 */
 
 /* 
- @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 20000. 
+ @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 49 and under 60
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
 
 /* 
- @Challenge 05 - Write a function that returns and array that is named `getTheTwenties` that loops from 1 to 20000 and returns and array of all the 20's
+ @Challenge 05 - Write a function that returns and array that is named `getTheTwenties` that loops from 1 to 60 and returns and array of all the 20's
  Use a condition in the loop to push to an array when the number is greater than or equal to 20 and under 30
  @Example - Expect to an array returned with value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
  @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
