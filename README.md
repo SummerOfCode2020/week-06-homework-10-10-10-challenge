@@ -10,7 +10,7 @@ Watching videos, listening to instructors, reading tutorials online, and any act
 
 To reach success the fastest, write 10 of each every day.  At a minimum, write 10 of each every week.
 
-If you can come up with parts of code for project you would like, use that data and those topics. Do things like defined your data, write functions to filter, sort, summarize and process your data.
+If you can come up with parts of code for project you would like, use that data and those topics. Do things like define your data in variables, write functions to filter your data, sort your data, summarize and process your data.
 
 In case you are not able to come up with your own project ideas, we have you covered.
 
