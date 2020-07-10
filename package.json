@@ -1,0 +1,23 @@
+{
+  "name": "week-06-homework-10-10-10-challenge",
+  "version": "1.0.0",
+  "description": "## The Mission",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SummerOfCode2020/week-06-homework-10-10-10-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SummerOfCode2020/week-06-homework-10-10-10-challenge/issues"
+  },
+  "homepage": "https://github.com/SummerOfCode2020/week-06-homework-10-10-10-challenge#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
