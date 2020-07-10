@@ -8,7 +8,7 @@ Write 10 Functions, 10 Loops, 10 Conditional Statements
 
 Watching videos, listening to instructors, reading tutorials online, and any actions that do not consist of you writing code will only get you so far. To be a successful programmer, you need lots of daily hands-on practice. Solving lots of code challenges.  Work on at least one personal project.
 
-To reach success the fastest, write 10 of each every day.  At a minimum, write 10 of each week.
+To reach success the fastest, write 10 of each every day.  At a minimum, write 10 of each every week.
 
 If you can come up with parts of code for project you would like, use that data and those topics. Do things like defined your data, write functions to filter, sort, summarize and process your data.
 
