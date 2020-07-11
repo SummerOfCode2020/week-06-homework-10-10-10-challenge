@@ -4,7 +4,7 @@
   "description": "## The Mission",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/SummerOfCode2020/week-06-homework-10-10-10-challenge#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
     "nodemon": "^2.0.4"
   }
 }
