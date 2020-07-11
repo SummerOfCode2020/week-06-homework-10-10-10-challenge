@@ -13,11 +13,24 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+function increaseLevel(valuePassed) {
+    valuePassed++
+    return valuePassed
+} 
+console.log(increaseLevel(10))
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
+function makeEchoes (x) {
+    let numberPassed = 0
+    while (numberPassed < x) {
+        console.log('Echo!');
+        numberPassed++
+    }
+}
+makeEchoes(3);
 
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
@@ -25,6 +38,7 @@
  @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
 */
+
 
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
