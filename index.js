@@ -199,6 +199,7 @@ function getHighScore(listOfScores){
             highScore = currentScore
         }
     })
+    console.log(highScore)
     return highScore
 }
 
