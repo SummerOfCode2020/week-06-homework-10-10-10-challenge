@@ -39,6 +39,17 @@ makeEchoes(3);
  @Test - Make a function call of  `showMeTheMoney()`
 */
 
+function showMeTheMoney(x) {
+    
+    for(let i = 0; i <= x; i++){ // here I am looping from 1 until 200
+        // setting up condition for the if statement
+        if (i > 190 && i <= x) { // condition is: if the number fed is more than 190, console log it.
+            console.log(i);
+        }
+    };  
+};
+showMeTheMoney(200)
+
 
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
@@ -46,6 +57,7 @@ makeEchoes(3);
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
+
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
