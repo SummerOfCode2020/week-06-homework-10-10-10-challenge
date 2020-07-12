@@ -18,6 +18,8 @@ In case the sample challenges included here are too easy for you, please work to
 
 ## Instructions
 
+This is basic sample excercies only. There is not solid logic to anything. Just fun'ish excercies. The "Do-re-mi-fa-so-la-ti" of programming. Singers do silly practices. Now you do to.
+
 - Fork the repo
 - Clone your personal copy of the repo
 - Install node modules and run tests using a command such as `npm install test`
