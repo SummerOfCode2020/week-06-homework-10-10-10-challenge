@@ -158,10 +158,9 @@ function sayHiToJim(names) {
 console.log(sayHiToJim(["Jane", "Anita Bath"]))
 console.log(sayHiToJim(["Jane", "Anita Bath", "Jim", "Sam Sung"]))
 
-// this is telling me that names.ForEach is not a function, but I'm not sure why yet.
 sayHiToJimAlt = (names) => {
     let greetingArray = []
-    names.ForEach(name => {
+    names.forEach(name => {
         if (name === 'Jim') {
             greetingArray.push('Hi ' + name)
         } else {
@@ -171,6 +170,7 @@ sayHiToJimAlt = (names) => {
     return greetingArray
 }
 console.log(sayHiToJimAlt(["Jane", "Anita Bath"]))
+console.log(sayHiToJimAlt(["Jane", "Anita Bath", "Jim", "Sam Sung"]))
 
 /*
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
@@ -196,6 +196,53 @@ console.log(sayHiToJimAlt(["Jane", "Anita Bath"]))
  @Test - console.log the result of a function call to `getEveryLittleThing()` and expect to see an array of three objects
 */
 
+const hamiltonCast = [
+    {
+        actor: 'Lin Manuel Meranda',
+        character: 'Alex Hamilton',
+        singing: true
+    },
+    {
+        actor: 'Leslie Odom Jr.',
+        character: 'Aaron Burr',
+        singing: true
+    },
+    {
+        actor: 'Jonathan Goff',
+        character: 'King George III',
+        singing: true
+    }
+]
+
+
+function getEveryLittleThing(arr) {
+    let resultArray = []
+    arr.forEach(obj => {
+        resultArray.push(obj)
+    })
+    return resultArray
+}
+console.log(getEveryLittleThing(hamiltonCast))
+
+// converts an array of objects into an array of arrays
+getEveryLittleThingAlt = (arr) => {
+    let resultArray = []
+    for (let i in arr) {
+        let tempArray = []
+        for (let j in arr[i]) {
+            tempArray.push(arr[i][j])
+        }
+        resultArray.push(tempArray)
+    }
+    return resultArray
+}
+console.log(getEveryLittleThingAlt(hamiltonCast))
+
+getEveryLittleThingAltAgain = (arr) => {
+    return arr
+}
+console.log(getEveryLittleThingAltAgain(hamiltonCast))
+
 /*
  @Challenge 08 - Write a function name `showLetterGrades` that console.logs letter grades
  The function should have a variable named `letters` with a value of ["H","G", "F", "E", "D", "C", "B", "A"]
@@ -209,9 +256,20 @@ console.log(sayHiToJimAlt(["Jane", "Anita Bath"]))
  A
  @Test - Make a function call of `showLetterGrades()`
  */
+const letters = ["H", "G", "F", "E", "D", "C", "B", "A"]
+function showLetterGrades(letters) {
+    letters.forEach(letter => {
+        if (letter !== "H" && letter !== "G") {
+            console.log(letter)
+        }
+    })
+    return 'All done!'
+}
+console.log(showLetterGrades(letters))
 
 /*
- @Challenge 09 - Write a function named `trackGallonsUsed` that uses a `while` loop and shows a countdown in the console of how many gallons are left until there are no gallons left
+ @Challenge 09 - Write a function named `trackGallonsUsed` that uses a `while` loop and shows a countdown in the 
+ console of how many gallons are left until there are no gallons left
   Hint: Within the loop, decrement the number of gallons
   Hint: Use the number of gallons remaining as the predicate
  @Example - Sending the function a value of 4 will result in
@@ -223,9 +281,68 @@ console.log(sayHiToJimAlt(["Jane", "Anita Bath"]))
  @Test - Make a function call of `trackGallonsUsed(5)`
 */
 
+function trackGallonsUsed(amount) {
+    while (amount > 0) {
+        console.log(amount + ' Gallons Remaining')
+        amount--
+    }
+    return 'All done!'
+}
+console.log(trackGallonsUsed(5))
 
+// changing the loop condition to amount >=0 will report: 0 Gallons Remaining
+trackGallonsUsedAlt = (amount) => {
+    while (amount >= 0) {
+        console.log(amount + ' Gallons Remaining')
+        amount--
+    }
+    return 'All done!'
+}
+console.log(trackGallonsUsedAlt(5))
 /*
  @Challenge 10 - Write a function named `getHighScore` that finds the highest value in an array of scores
  @Example - Sending the function a value of [1999,2020,3080,1111] will result in 3080
  @Test - Write a console.log that shows the value of `getHighScore([1999,2020,3080,1111])`
 */
+
+function getHighScore(scores) {
+    let highScore = scores[0]
+    scores.forEach(score => {
+        if (score > highScore) {
+            highScore = score
+        }
+    })
+    return highScore
+}
+console.log(getHighScore([1999, 2020, 3080, 1111]))
+console.log(getHighScore([1999, 2020, 3080, 1111, 6000]))
+console.log(getHighScore([9000, 1999, 2020, 3080, 1111, 5000]))
+
+getHighScoreAlt = (scores) => {
+    let highScore = scores[0]
+    for (let i = 0; i < scores.length; i++) {
+        if (scores[i] > scores[0]) {
+            highScore = scores[i]
+        }
+    }
+    return highScore
+}
+console.log(getHighScoreAlt([1999, 2020, 3080, 1111]))
+console.log(getHighScoreAlt([1999, 2020, 3080, 1111, 5000]))
+console.log(getHighScoreAlt([7000, 1999, 2020, 3080, 1111, 5000]))
+
+// found Math.max/Math.min methods via a Google search, pretty convenient
+function getMaxScore(scores) {
+    highScore = Math.max(...scores)
+    return highScore
+}
+console.log(getMaxScore([1999, 2020, 3080, 1111]))
+console.log(getMaxScore([1999, 2020, 3080, 1111, 5000]))
+
+// added a getLowScore function to test out the Math.min method as well
+getMinScore = (scores) => {
+    lowestScore = Math.min(...scores)
+    return lowestScore
+}
+console.log(getMinScore([1999, 2020, 12, 3080, 1111]))
+console.log(getMinScore([1999, 2020, 3080, 1111, 5000, 75]))
