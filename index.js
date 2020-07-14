@@ -51,8 +51,10 @@
 
 /* 
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
- Objects in the array should all have properties such as `size`, `singin`, `saying`
+ Objects in the array should all have properties such as `size`, `singin`, `saying`. The goal is to practice writing sytax of objects within an array.
+ Good background music for this challenge is https://www.youtube.com/watch?v=mACqcZZwG0k
  @Example - Expect to get an array of three birds
+ 
  [
      {
          size: 'little',
