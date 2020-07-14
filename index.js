@@ -57,7 +57,15 @@ showMeTheMoney(200)
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
-
+function showTheFifties(x) {
+    let i;
+    for (let i = 0; i <= x; i++) {
+        if (i >= 50 && i <= 60) {
+            console.log(i)
+        }
+    }
+}
+console.log(showTheFifties(200)) // fix bug in this code *** last loop returns an undefined value
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
