@@ -27,6 +27,17 @@ console.log(increaseLevel(10))
  @Test - Make a function call of  `makeEchoes(5)`
 */
 
+function makeEchoes(echo) {
+    let makeEcho = []
+
+    for (let i = 1; i <=5; i++) {
+        makeEcho.push('echo')
+    }
+    return makeEcho
+}
+
+console.log(makeEchoes(5))
+
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 190
