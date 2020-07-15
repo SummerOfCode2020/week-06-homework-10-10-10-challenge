@@ -13,6 +13,14 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+function increaseLevel(value) {
+    let i = value
+    if (i = value, i++) {
+    return i++}
+}
+
+console.log(increaseLevel(10))
+
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
