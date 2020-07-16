@@ -13,11 +13,24 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+function increaseLevel(valuePassed) {
+    valuePassed++
+    return valuePassed
+} 
+console.log(increaseLevel(10))
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
+function makeEchoes (x) {
+    let numberPassed = 0
+    while (numberPassed < x) {
+        console.log('Echo!');
+        numberPassed++
+    }
+}
+makeEchoes(3);
 
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
@@ -26,12 +39,33 @@
  @Test - Make a function call of  `showMeTheMoney()`
 */
 
+function showMeTheMoney(x) {
+    
+    for(let i = 0; i <= x; i++){ // here I am looping from 1 until 200
+        // setting up condition for the if statement
+        if (i > 190 && i <= x) { // condition is: if the number fed is more than 190, console log it.
+            console.log(i);
+        }
+    };  
+};
+showMeTheMoney(200)
+
+
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 49 and under 60
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
+function showTheFifties(x) {
+    let i;
+    for (let i = 0; i <= x; i++) {
+        if (i >= 50 && i <= 60) {
+            console.log(i)
+        }
+    }
+}
+console.log(showTheFifties(200)) // fix bug in this code *** last loop returns an undefined value
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
