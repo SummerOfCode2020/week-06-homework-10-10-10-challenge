@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SummerOfCode2020/week-06-homework-10-10-10-challenge#readme",
   "dependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "test": "^0.6.0"
   }
 }
