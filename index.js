@@ -13,25 +13,79 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+
+function increaseLevel(numbers){
+let addNumber = 1
+let result = addNumber + numbers
+return result
+
+}
+console.log(increaseLevel(3))
+
+
+
+
+
+
+
+
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
+//string.repeat([count]);
+// This is the reference to this code https://www.techonthenet.com/js/string_repeat.php#:~:text=The%20repeat()%20method%20returns,()%20method%20will%20return%20RangeError.
+function makeEchoes(numberOfTime){
+    let A = 'Echo' + ' '
+    let result = A.repeat([numberOfTime])
+    return result 
+}
+
+console.log(makeEchoes(5))
+
 
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 190
  @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
-*/
-
+*/function showMeTheMoney (numberCall){
+if(0 < numberCall && numberCall <= 200){
+   // the above statement if checking to see if numberCall is between 0 to 200
+    
+    for( let i = 0; i < numberCall; i++){
+        if(i > 190){    
+            console.log(i)
+        }
+    }
+    return numberCall
+}
+}
+console.log(showMeTheMoney(200))
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 49 and under 60
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
+function showTheFifties(numb){
+if(0 < numb && numb <=200){
+for(let i = 0; i < numb; i++){
+  if( i > 49){
+
+   console.log(i) 
+  }
+
+} 
+
+
+
+}return numb
+
+}
+    
+console.log(showTheFifties(60))
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
@@ -39,6 +93,29 @@
  @Example - Expect an array returned with value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
  @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 */
+function getTheTwenties (newNumb){
+let newArr = []
+if(0<newNumb&&newNumb<=60){
+for(let i = 0; i < newNumb; i++){
+if(i >=20 && i < 30){
+newArr.push(i)
+
+   }
+
+   }
+}
+return newArr
+
+}console.log(getTheTwenties(30))
+/*function test(){
+    var sub_array = [];
+    var super_array =[];
+    for (var i=1;i<=3;i++){
+        sub_array.push(i);
+        super_array.push(sub_array)*/
+
+
+
 
 /* 
  @Challenge 06 - Write a function that accepts an array names. Name the function `sayHiToJim` that loops through the array of names.
@@ -48,6 +125,24 @@
  @Test01 - Make a function call `sayHiToJim(["Jane", "Anita Bath"])`
  @Test02 - Make a function call `sayHiToJim(["Jane", "Anita Bath", "Jim", "Sam Sung"])`
 */
+function sayHiToJim(nameCall){
+for(let i = 0;i < nameCall.length;i++){
+if(nameCall === 'Jim'){
+   return 'Hi Jim'
+}else{
+    return nameCall.forEach(element => {
+        console.log('Ignoring  ' + element)
+    });  }
+
+
+}
+
+
+
+
+
+
+}console.log(sayHiToJim(['al']))
 
 /* 
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
