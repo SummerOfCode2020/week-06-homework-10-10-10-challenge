@@ -13,11 +13,28 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+/*function increaseLevel(number) {
+    let actualLevel = 1
+    let result = actualLevel + number
+    return result
+}
+
+console.log (increaseLevel(30))
+/*
+
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
+
+function makeEchos(number) {
+    let echoName = 'echo '
+    let result = echoName.repeat([number])
+    return result  
+
+}
+console.log (makeEchos(5))
 
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
@@ -26,6 +43,25 @@
  @Test - Make a function call of  `showMeTheMoney()`
 */
 
+function showMeTheMoney (number) {
+    if (0 < number && number <= 200) {
+            for (let i = 0; i < number; i++) {
+            if (i > 190) {
+                console.log (i)
+            }
+        }
+               
+      }
+      return number
+      
+      //syntax from w3schools
+      //for (i = 0; i < 5; i++) {
+      //  text += "The number is " + i + "<br>";
+      //}
+}
+console.log (showMeTheMoney(200))
+
+
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 49 and under 60
@@ -33,12 +69,39 @@
  @Test - Make a function call of  `showTheFifties()`
 */
 
+function showTheFifties (number) {
+    if (0 < number && number <= 200) {
+        for (let i = 0; i < number; i++) {
+            if (i > 49) {
+                console.log (i)
+            }
+        }
+    }
+    return number
+}
+console.log(showTheFifties (60))
+
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
  Use a condition in the loop to push to an array when the number is greater than or equal to 20 and under 30
  @Example - Expect an array returned with value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
  @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 */
+
+function getTheTwenties (number) {
+    let numArray = []
+    if (0 < number && number <= 60) {
+        for (let i = 0; i < number; i++) {
+            if(i >= 20 && i < 30) {
+                numArray.push(i)
+            }
+        }
+    }
+    return numArray
+}
+
+console.log(getTheTwenties (30))
+ 
 
 /* 
  @Challenge 06 - Write a function that accepts an array names. Name the function `sayHiToJim` that loops through the array of names.
@@ -48,6 +111,23 @@
  @Test01 - Make a function call `sayHiToJim(["Jane", "Anita Bath"])`
  @Test02 - Make a function call `sayHiToJim(["Jane", "Anita Bath", "Jim", "Sam Sung"])`
 */
+
+function sayHiToJim (userName){
+    for(let i = 0; i < userName.length; i++) { 
+        if(userName === "Jim"){
+            return "Hi Jim"
+        }
+        else {
+            return userName.forEach(element => {
+                console.log('Ignoring ' +  element)
+              
+            });} 
+    }
+}
+
+console.log(sayHiToJim('Jim'))
+
+
 
 /* 
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
