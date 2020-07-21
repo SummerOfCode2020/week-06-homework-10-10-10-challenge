@@ -147,8 +147,8 @@ if(nameCall === 'Jim'){
 /* 
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
  Objects in the array should all have properties such as `size`, `singin`, `saying`
- @Example - Expect to get an array of three birds
- [
+ @Example - Expect to get an array of three birds*/
+/*let littleThing = [
      {
          size: 'little',
          singin: true,
@@ -164,9 +164,43 @@ if(nameCall === 'Jim'){
          singin: true,
          sayin: 'This is my message to you'
      }
- ]
- @Test - console.log the result of a function call to `getEveryLittleThing()` and expect to see an array of three objects
-*/
+ ] 
+ //@Test - console.log the result of a function call to `getEveryLittleThing()` and expect to see an array of three objects*/
+function getEveryLittleThing(){
+    
+    let littleThing = [
+        {
+            size: 'little',
+            singin: true,
+            sayin: 'This is my message to you'
+        },
+        {
+            size: 'little',
+            singin: true,
+            sayin: 'This is my message to you'
+        },
+        {
+            size: 'little',
+            singin: true,
+            sayin: 'This is my message to you'
+        }]
+         
+        
+    return littleThing
+    
+    }console.log(getEveryLittleThing())
+
+
+
+/*function makeEchoes(numberOfTime){
+    let A = 'Echo' + ' '
+    let result = A.repeat([numberOfTime])
+    return result 
+}
+
+console.log(makeEchoes(5))
+
+
 
 /* 
  @Challenge 08 - Write a function name `showLetterGrades` that console.logs letter grades
