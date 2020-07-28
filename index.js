@@ -13,14 +13,14 @@
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
-/*function increaseLevel(number) {
+function increaseLevel(number) {
     let actualLevel = 1
     let result = actualLevel + number
     return result
 }
 
 console.log (increaseLevel(30))
-/*
+
 
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
@@ -191,7 +191,7 @@ function getEveryLittleThing () {
 
   }
 
-console.log(getEveryLittleThing(3))
+console.log(getEveryLittleThing(3))*/
 
 /* 
  @Challenge 08 - Write a function name `showLetterGrades` that console.logs letter grades
@@ -206,6 +206,23 @@ console.log(getEveryLittleThing(3))
  A
  @Test - Make a function call of `showLetterGrades()`
  */
+const letterGrade = ["H", "G", "F", "E","D", "C", "B", "A"]
+
+function showLetterGrades(letters) {
+    let specialLetter = ["A", "B", "C", "D", "F"]
+    if(specialLetter !== letters) {
+        return specialLetter
+    } else {
+        console.log(letters)
+    }
+}
+
+//var newArray = array.filter(function(item) { return condition; }
+
+console.log(showLetterGrades(letterGrade));
+
+
+
 
 /* 
  @Challenge 09 - Write a function named `trackGallonsUsed` that uses a `while` loop and shows a countdown in the console of how many gallons are left until there are no gallons left
@@ -219,6 +236,14 @@ console.log(getEveryLittleThing(3))
   in the terminal
  @Test - Make a function call of `trackGallonsUsed(5)`
 */
+function trackGallonsUsed(){
+    let i = 4;
+    while( i >= 1) {
+        console.log((i) + " gallons remaining")
+        i--
+    }
+}
+trackGallonsUsed()
 
 
 /* 
@@ -226,3 +251,5 @@ console.log(getEveryLittleThing(3))
  @Example - Sending the function a value of [1999,2020,3080,1111] will result in 3080
  @Test - Write a console.log that shows the value of `getHighScore([1999,2020,3080,1111])`
 */
+
+
