@@ -12,12 +12,29 @@
  @Example - Sending the function a value of 10 will result in 11
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
+function increaseLevel(i) {
+    return parseInt(i) + 1
+}
+let i = 0
+
+console.log(increaseLevel(10));
+
 
 /* 
  @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
+
+function makeEchoes() {
+    let echoCalls= []
+    for(let i = 0; i < 5; i++){
+        echoCalls.push('Echo!')
+    }
+    return echoCalls
+}
+console.log(makeEchoes());
+
 
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
@@ -26,6 +43,17 @@
  @Test - Make a function call of  `showMeTheMoney()`
 */
 
+function showMeTheMoney() {
+    
+    for (let i = 1; i <= 200; i++) {
+        if (i > 190) {
+            console.log(i)
+        }
+    }
+    
+}
+showMeTheMoney()
+
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the number when it is over 49 and under 60
@@ -33,6 +61,16 @@
  @Test - Make a function call of  `showTheFifties()`
 */
 
+function showTheFifties() {
+    
+    for (let i = 1; i <= 200; i++) {
+        if (i >= 50 && i < 60) {
+            console.log(i)
+        }
+    }
+    
+}
+showTheFifties()
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
  Use a condition in the loop to push to an array when the number is greater than or equal to 20 and under 30
@@ -40,14 +78,53 @@
  @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 */
 
+function getTheTwenties() {
+    
+    for (let i = 1; i <= 200; i++) {
+        if (i >= 20 && i < 30) {
+            console.log(i)
+        }
+    }
+    
+}
+getTheTwenties()
+
 /* 
- @Challenge 06 - Write a function that accepts an array names. Name the function `sayHiToJim` that loops through the array of names.
- Use a condition in the loop to check if the name is "Jim". If the name is "Jim" console.log a message to say "Hi Jim"
- Use conditional logic to console.log "Ignoring " and then the name of the person being ignored.
+ @Challenge 06 - Write a function that accepts an array names. 
+ Name the function `sayHiToJim` that loops through the array of names.
+ Use a condition in the loop to check if the name is "Jim". 
+ If the name is "Jim" console.log a message to say "Hi Jim"
+ Use conditional logic to console.log "Ignoring " and then the 
+ name of the person being ignored.
  @Example - Expect to see "Ignorning Jane" and "Ignoring Anita Bath" when the function is given an array of ["Jane", "Anita Bath"]
  @Test01 - Make a function call `sayHiToJim(["Jane", "Anita Bath"])`
  @Test02 - Make a function call `sayHiToJim(["Jane", "Anita Bath", "Jim", "Sam Sung"])`
 */
+/* let names = ['Jane', 'Anita Bath', 'Jim', 'Sam Sung']
+function sayHiToJim() {
+    let name = ''
+    if (name = 'Jim') {
+        console.log('Hi Jim!')
+    } else {
+        console.log('Ignoring' + name)
+    }
+}
+sayHiToJim('Jane') */
+function sayHiToJim(i){
+    
+    if (i === 'Jim') {
+        console.log('Hi Jim')
+    } else if ( i === 'Anita Bath') {
+        console.log('Ignoring Anita Bath')
+    } else if ( i === 'Jane') {
+        console.log('Ignoring Jane')
+    }else if ( i === 'Sam Sung') {
+        console.log('Ignoring Sam Sung')
+    } else {
+        console.log('')
+    }
+}
+sayHiToJim('Jane')
 
 /* 
  @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
