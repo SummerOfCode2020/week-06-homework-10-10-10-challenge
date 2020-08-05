@@ -44,12 +44,14 @@ console.log(makeEchoes(5))
  @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
 */
-
-for (let index = 0; index <= 200; index++) {
-    if (index > 190) {
-        console.log(index);
+function showMeTheMoney() {
+    for (let index = 0; index <= 200; index++) {
+        if (index > 190) {
+            console.log(index);
+        }
     }
 }
+showMeTheMoney()
 
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
@@ -57,12 +59,14 @@ for (let index = 0; index <= 200; index++) {
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
-for (let index = 0; index < 200; index++) {
-    if (index > 49 && index < 60) {
-        console.log(index);
+function ShowTheFifties() {
+    for (let index = 0; index < 200; index++) {
+        if (index > 49 && index < 60) {
+            console.log(index);
+        }
     }
 }
-
+ShowTheFifties()
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
