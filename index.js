@@ -8,34 +8,69 @@
  */
 
 /* 
- @Challenge 01 - Write a function named `increaseLevel` that adds 1 to any number value passed in as a parameter
+ @Challenge 01 - Write a function named `increaseLevel` that adds 1 to any i value passed in as a parameter
  @Example - Sending the function a value of 10 will result in 11
  @Test - Write a console.log that shows the value of `increaseLevel(10)`
 */
 
+function increaseLevel(value) {
+    let i = value
+    if (i = value, i++) {
+    return i++}
+}
+
+console.log(increaseLevel(10))
+
 /* 
- @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
+ @Challenge 02 - Write a function named `makeEchoes` that loops for the i of times indicated and console.log's "Echo!" in each loop
  @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
  @Test - Make a function call of  `makeEchoes(5)`
 */
 
+function makeEchoes(echo) {
+    let makeEcho = []
+
+    for (let i = 1; i <=5; i++) {
+        makeEcho.push('echo')
+    }
+    return makeEcho
+}
+
+console.log(makeEchoes(5))
+
 /* 
  @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
- Use a condition in the loop to console.log the number when it is over 190
+ Use a condition in the loop to console.log the i when it is over 190
  @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
 */
+function showMeTheMoney() {
+    for (let index = 0; index <= 200; index++) {
+        if (index > 190) {
+            console.log(index);
+        }
+    }
+}
+showMeTheMoney()
 
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
- Use a condition in the loop to console.log the number when it is over 49 and under 60
+ Use a condition in the loop to console.log the i when it is over 49 and under 60
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
+function ShowTheFifties() {
+    for (let index = 0; index < 200; index++) {
+        if (index > 49 && index < 60) {
+            console.log(index);
+        }
+    }
+}
+ShowTheFifties()
 
 /* 
  @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
- Use a condition in the loop to push to an array when the number is greater than or equal to 20 and under 30
+ Use a condition in the loop to push to an array when the i is greater than or equal to 20 and under 30
  @Example - Expect an array returned with value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
  @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 */
@@ -91,8 +126,8 @@
 
 /* 
  @Challenge 09 - Write a function named `trackGallonsUsed` that uses a `while` loop and shows a countdown in the console of how many gallons are left until there are no gallons left
-  Hint: Within the loop, decrement the number of gallons
-  Hint: Use the number of gallons remaining as the predicate
+  Hint: Within the loop, decrement the i of gallons
+  Hint: Use the i of gallons remaining as the predicate
  @Example - Sending the function a value of 4 will result in 
  "4 Gallons Remaining"
  "3 Gallons Remaining"
