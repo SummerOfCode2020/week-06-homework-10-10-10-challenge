@@ -44,18 +44,24 @@ console.log(makeEchoes(5))
  @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
  @Test - Make a function call of  `showMeTheMoney()`
 */
+
 for (let index = 0; index <= 200; index++) {
     if (index > 190) {
         console.log(index);
     }
 }
+
 /* 
  @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
  Use a condition in the loop to console.log the i when it is over 49 and under 60
  @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
  @Test - Make a function call of  `showTheFifties()`
 */
-
+for (let index = 0; index < 200; index++) {
+    if (index > 49 && index < 60) {
+        console.log(index);
+    }
+}
 
 
 /* 
