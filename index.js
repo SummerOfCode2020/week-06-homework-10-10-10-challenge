@@ -1,110 +1,92 @@
 /**
     NO COPY AND PASTE! NONE! YES THIS IS SHOUTING! 🗣😎
-    The goal is to train your hands and fingers to write code. 
+    The goal is to train your hands and fingers to write code.
     Write all of the syntax to train your hands 👐.
     For each challenge, write the code from scratch, fully from scratch no matter how similar to the previous challenge.
     These challenges were written between 2 AM and 3 AM. If anything is confusing as a result, be sure to ask for clarification.
     Remember. No copy pasta. 🍝 Zero. Zilch. Nessuna. Ninguno. Aon Cheann.
  */
 
-/* 
- @Challenge 01 - Write a function named `increaseLevel` that adds 1 to any number value passed in as a parameter
- @Example - Sending the function a value of 10 will result in 11
- @Test - Write a console.log that shows the value of `increaseLevel(10)`
+/*
+ @Challenge 01 - Write a function named `multiplyByTwo` that multiplies any number value passed in as a parameter by 2
+ @Example - Sending the function a value of 6 will result in 12
+ @Test - Write a console.log that shows the value of `multiplyByTwo(6)`
 */
 
-/* 
- @Challenge 02 - Write a function named `makeEchoes` that loops for the number of times indicated and console.log's "Echo!" in each loop
- @Example - Sending the function a value of 5 will result in 5 "Echo!"'s in the terminal
- @Test - Make a function call of  `makeEchoes(5)`
+/*
+ @Challenge 02 - Write a function named `arrayLength` that console.logs the amount of items in an array.
+ The function should have a variable named `numbers` with values [86, 45, 63, 29, 107]
+ @Example - The function should log a value of 5 in the terminal
+ @Test - Make a function call of arrayLength()
 */
 
-/* 
- @Challenge 03 - Write a function named `showMeTheMoney` that loops from 1 to 200. 
- Use a condition in the loop to console.log the number when it is over 190
- @Example - Expect to see 191, 192, 193, 194, 195, 196, 197, 198, 199, 200 in the terminal
- @Test - Make a function call of  `showMeTheMoney()`
+/*
+ @Challenge 03 - Write a function named `getBonusPoints` that loops from 1 to 110.
+ Use a condition in the loop to console.log the number when it is over 100
+ @Example - Expect to see 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 in the terminal
+ @Test - Make a function call of  `getBonusPoints()`
 */
 
-/* 
- @Challenge 04 - Write a function named `showTheFifties` that loops from 1 to 200. 
- Use a condition in the loop to console.log the number when it is over 49 and under 60
- @Example - Expect to see 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 in the terminal
- @Test - Make a function call of  `showTheFifties()`
+/*
+This link provides examples to help guide you for the next 2 challenges https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 */
 
-/* 
- @Challenge 05 - Write a function that returns an array that is named `getTheTwenties` that loops from 1 to 60 and returns an array of all the 20's
- Use a condition in the loop to push to an array when the number is greater than or equal to 20 and under 30
- @Example - Expect an array returned with value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
- @Test - console.log the result of a function call of  `getTheTwenties()` and expect to see an array value of [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+/*
+ @Challenge 04 - Write a function named `findMyAge` that passes in a number as a parameter and console.logs a string stating your age.
+ Use template literals to write a prase such as "I am 27 years old.".
+ @Test - Make a function call of `findMyAge(27)`
 */
 
-/* 
- @Challenge 06 - Write a function that accepts an array names. Name the function `sayHiToJim` that loops through the array of names.
- Use a condition in the loop to check if the name is "Jim". If the name is "Jim" console.log a message to say "Hi Jim"
- Use conditional logic to console.log "Ignoring " and then the name of the person being ignored.
- @Example - Expect to see "Ignorning Jane" and "Ignoring Anita Bath" when the function is given an array of ["Jane", "Anita Bath"]
- @Test01 - Make a function call `sayHiToJim(["Jane", "Anita Bath"])`
- @Test02 - Make a function call `sayHiToJim(["Jane", "Anita Bath", "Jim", "Sam Sung"])`
+/*
+ @Challenge 05 - Using the following function, rewrite the console.log statement to use template literals and obtain the same result.
+ findValues() {
+    const a = 6
+    const b = 2
+    console.log(a + ' is larger than ' + b + ', but not larger than ' + (a + b) + '.')
+ }
+ @Test - Make a function call of `findValues`
 */
 
-/* 
- @Challenge 07 - Write a function name `getEveryLittleThing` that has an array with three objects and returns an array of all of those objects
- Objects in the array should all have properties such as `size`, `singin`, `saying`. The goal is to practice writing sytax of objects within an array.
- Good background music for this challenge is https://www.youtube.com/watch?v=mACqcZZwG0k
- @Example - Expect to get an array of three birds
- 
- [
-     {
-         size: 'little',
-         singin: true,
-         sayin: 'This is my message to you'
-     },
-     {
-         size: 'little',
-         singin: true,
-         sayin: 'This is my message to you'
-     },
-     {
-         size: 'little',
-         singin: true,
-         sayin: 'This is my message to you'
-     }
- ]
- @Test - console.log the result of a function call to `getEveryLittleThing()` and expect to see an array of three objects
+/*
+ @Challenge 06 - Write a function that accepts a string containing either 'hot' or 'cold' . Name the function `whatToWear`.
+ Use a condition check if the temperature is "hot". If the name is "hot" console.log a message to say "Wear a t-shirt"
+ Use a condition check if the temperature is "cold". If the name is "cold" console.log a message to say "Wear a jacket"
+ If neither option is availalbe, console.log a message to say "Please choose either cold or hot"
+ @Example - Expect to see "Wear a t-shirt" when the function is given the string 'hot'
+ @Test01 - Make a function call `whatToWear('hot')`
+ @Test02 - Make a function call `whatToWear('cold)`
 */
 
-/* 
- @Challenge 08 - Write a function name `showLetterGrades` that console.logs letter grades
- The function should have a variable named `letters` with a value of ["H","G", "F", "E", "D", "C", "B", "A"]
- The function should use a condition in loop to console.log letters of A, B, C, D or F
- Poor E
- @Example - calling `showLetterGrades` will result in the terminal displaying
- F
- D
- C
- B
- A
- @Test - Make a function call of `showLetterGrades()`
+/*
+ @Challenge 07 - Write a function name `showEvenNumbers` that console.logs all even numbers in an array
+ The function should have a variable named `numbers` with a value of [2, 25, 7, 10, 3, 42, 16]
+ The function should use a condition in loop to console.log numbers of 2, 10, 42 and 16
+ Hint: You can determine if a number is even if it is evenly divisible by 2
+ @Example - calling `showEvenNumbers` will result in the terminal displaying 2, 10, 42 and 16
+ @Test - Make a function call of `showEvenNumbers()`
  */
 
-/* 
- @Challenge 09 - Write a function named `trackGallonsUsed` that uses a `while` loop and shows a countdown in the console of how many gallons are left until there are no gallons left
-  Hint: Within the loop, decrement the number of gallons
-  Hint: Use the number of gallons remaining as the predicate
- @Example - Sending the function a value of 4 will result in 
- "4 Gallons Remaining"
- "3 Gallons Remaining"
- "2 Gallons Remaining"
- "1 Gallons Remaining"
-  in the terminal
- @Test - Make a function call of `trackGallonsUsed(5)`
+/*
+ @Challenge 08 - Write a function named `getLowScore` that finds the lowest value in an array of scores
+ @Example - Sending the function a value of [96, 72, 80, 51] will result in 51
+ @Test - Write a console.log that shows the value of `getLowScore([96, 72, 80, 51])`
 */
 
+/*
+ @Challenge09 - Write a function named `addNumbers` that console.logs the result of adding multiple numbers in an array together.
+ The function should have a variable named `numbers` with the value of [23, 33, 12, 41, 18].
+ @Example - Expect the function to console.log a value of 128
+ @ Test - Make a function call of `addNumbers()
+*/
 
-/* 
- @Challenge 10 - Write a function named `getHighScore` that finds the highest value in an array of scores
- @Example - Sending the function a value of [1999,2020,3080,1111] will result in 3080
- @Test - Write a console.log that shows the value of `getHighScore([1999,2020,3080,1111])`
+/*
+ @Challenge10 - Write a function named `findCurrentGrade` that returns an average of an array of scores,
+ then console.logs whether the score is a `Passing` or `Failing`.
+ The function should have a variable named `scores` with the values [92, 85, 100, 74, 89].
+ The function should have a condition to assign a `Passing` or `Failing`:
+    Less than 65 = Failing
+    65 or greater = Passing
+ Hint: Use arr.length to get the amount of items in array to divide from the sum of the scores.
+ @Example - Expect the result of sending in the function `findCurrentGrade` to be `Passing`
+ @Test - Make a function call of `findCurrentGrade()`
 */
